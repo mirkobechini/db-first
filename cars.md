@@ -4,22 +4,22 @@ Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardant
 
 ## Table name: (cars)
 
-- plate CHAR(7)
-- brand VARCHAR(30)
-- model VARCHAR(30)
-- type VARCHAR(30)
-- power SMALLINT
-- shift_type VARCHAR(15)
-- color VARCHAR(100)
-- optionals TEXT
-- year YEAR
-- chilometers MEDIUMINT
-- fuel_type VARCHAR(20)
-- last_revision DATE
-- last_oil_control_km MEDIUMINT
-- price DECIMAL(9,2)
-- incidents TINYINT
-- note TEXT
+- plate CHAR(7) UNIQUE NOT NULL PK INDEX
+- brand VARCHAR(30) NOT NULL
+- model VARCHAR(30) NOT NULL
+- type VARCHAR(30) NOT NULL
+- power SMALLINT NOT NULL
+- shift_type VARCHAR(15) NOT NULL
+- color VARCHAR(100) NOT NULL
+- optionals TEXT NULL
+- year YEAR NOT NULL
+- chilometers MEDIUMINT NOT NULL
+- fuel_type VARCHAR(20) NOT NULL
+- last_revision DATE NULL
+- last_oil_control_km MEDIUMINT NULL
+- price DECIMAL(9,2) NOT NULL
+- incidents TINYINT NOT NULL
+- note TEXT NULL
 
 
 Esempio di auto:
